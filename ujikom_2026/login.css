@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image:url('gambar/am.png');
+	backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    margin-bottom: 20px;
+}
+
+table td {
+    padding: 10px 0;
+}
+
+table td:first-child {
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+}
+
+table td:nth-child(2) {
+    width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+button {
+    background: #667eea;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background: #5a6fd8;
+}
+
+body br + echo {
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+media (max-width: 480px) {
+    form {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        font-size: 14px;
+    }
+    
+    button {
+        font-size: 14px;
+    }
+}
